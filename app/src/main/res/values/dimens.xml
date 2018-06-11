@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fab_margin">@dimen/_16sdp</dimen>
+    <dimen name="app_bar_height">@dimen/_200sdp</dimen>
+    <dimen name="item_width">@dimen/_290sdp</dimen>
+    <dimen name="text_margin">@dimen/_16sdp</dimen>
+    <dimen name="font_8">8sp</dimen>
+    <dimen name="font_10">10sp</dimen>
+    <dimen name="font_12">12sp</dimen>
+    <dimen name="font_14">14sp</dimen>
+    <dimen name="font_16">16sp</dimen>
+    <dimen name="font_18">18sp</dimen>
+    <dimen name="font_20">20sp</dimen>
+    <dimen name="font_22">22sp</dimen>
+    <dimen name="font_24">24sp</dimen>
+    <dimen name="font_26">26sp</dimen>
+    <dimen name="font_30">30sp</dimen>
+    <dimen name="font_40">40sp</dimen>
+    <dimen name="font_50">50sp</dimen>
+    <dimen name="font_60">60sp</dimen>
+    <dimen name="font_70">70sp</dimen>
+    <dimen name="font_80">80sp</dimen>
+    <dimen name="font_90">90sp</dimen>
+    <dimen name="font_100">100sp</dimen>
+
+</resources>

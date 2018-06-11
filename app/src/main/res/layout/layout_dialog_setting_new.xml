@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/drawable_border_round_3sdp_white"
+        android:minWidth="@dimen/_400sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:paddingLeft="@dimen/_10sdp"
+        android:paddingRight="@dimen/_10sdp"
+        android:paddingTop="@dimen/_10sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/tvStatusText"
+
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/settings"
+                    android:textAllCaps="true"
+                    android:textColor="@color/color_text_default_dark"
+                    android:textSize="@dimen/font_22"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tabs"
+                style="@style/MyCustomTabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@color/white"
+                android:minHeight="?actionBarSize"
+                android:padding="@dimen/_5sdp"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:tabGravity="fill"
+                app:tabIndicatorColor="@color/color_text_default_dark"
+                app:tabIndicatorHeight="@dimen/_2sdp"
+                app:tabMaxWidth="0dp"
+                app:tabMode="fixed"
+                app:tabSelectedTextColor="@color/color_text_default_dark"
+                app:tabTextColor="@color/color_grey_dark" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vpSetting"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvStatusText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:background="@color/white"
+            android:padding="@dimen/_5sdp"
+            android:textColor="@color/color_text_default"
+            android:textSize="@dimen/font_18"
+            android:visibility="gone" />
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="@dimen/_400sdp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="@dimen/_400sdp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_10sdp">
+
+            <TextView
+                android:id="@+id/tvPaymentType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/payment_type"
+                android:textAllCaps="false"
+                android:textColor="@color/color_text_default_dark"
+                android:textSize="@dimen/font_24"
+                android:textStyle="bold" />
+
+            <TableRow
+                android:id="@+id/llCards"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvPaymentType"
+                android:orientation="vertical">
+
+                <com.frshlypos.widgets.ToggleButtonGroupTableLayout
+                    android:id="@+id/toggleButtonGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TableRow>
+
+                        <RadioButton
+                            android:id="@+id/rbSodexoCard"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:button="@drawable/selector_radio_button"
+                            android:padding="@dimen/_10sdp"
+                            android:text="@string/sodexo_card"
+                            android:textSize="@dimen/font_22" />
+
+                        <RadioButton
+                            android:id="@+id/rbGPRSCard"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:button="@drawable/selector_radio_button"
+                            android:padding="@dimen/_10sdp"
+                            android:text="@string/gprs_card"
+                            android:textSize="@dimen/font_22" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <RadioButton
+                            android:id="@+id/rbSodexoCoupon"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:button="@drawable/selector_radio_button"
+                            android:padding="@dimen/_10sdp"
+                            android:text="@string/sodexo_coupon"
+                            android:textSize="@dimen/font_22" />
+
+                        <RadioButton
+                            android:id="@+id/rbWallet"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:button="@drawable/selector_radio_button"
+                            android:padding="@dimen/_10sdp"
+                            android:text="@string/wallet"
+                            android:textSize="@dimen/font_22" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <RadioButton
+                            android:id="@+id/rbCredit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/selector_radio_button"
+                            android:padding="@dimen/_10sdp"
+                            android:text="@string/credit"
+                            android:textSize="@dimen/font_22" />
+                    </TableRow>
+
+                </com.frshlypos.widgets.ToggleButtonGroupTableLayout>
+            </TableRow>
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_below="@+id/llCards"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@color/color_grey" />
+
+            <LinearLayout
+                android:id="@+id/llButtons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:gravity="right|end"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="?selectableItemBackground"
+                    android:padding="@dimen/_5sdp"
+                    android:text="@string/back"
+                    android:textColor="@color/color_text_hint"
+                    android:textSize="@dimen/font_24" />
+
+                <Button
+                    android:id="@+id/btnPay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="?selectableItemBackground"
+                    android:padding="@dimen/_5sdp"
+                    android:text="@string/pay"
+                    android:textColor="@color/color_text_default_dark"
+                    android:textSize="@dimen/font_24" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</layout>

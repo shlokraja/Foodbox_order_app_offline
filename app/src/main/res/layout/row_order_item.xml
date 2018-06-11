@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_marginBottom="@dimen/_1sdp"
+        android:id="@+id/rlMain"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:paddingLeft="@dimen/_10sdp"
+        android:paddingRight="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:gravity="left"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:text="Cashew-Schezwan Chicken Fried Rice"
+            android:id="@+id/tvItemName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:textColor="@color/color_text_default"
+            android:textSize="@dimen/font_20"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@+id/ivDelete"
+            android:layout_toStartOf="@+id/ivDelete" />
+
+        <ImageView
+            android:padding="@dimen/_5sdp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ivDelete" />
+
+
+        <LinearLayout
+            android:id="@+id/llPriceAndCount"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_below="@id/tvItemName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                tools:text="123"
+                android:id="@+id/tvPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_text_default_dark"
+                android:textSize="@dimen/font_20" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right|center_vertical"
+                android:orientation="horizontal">
+
+
+                <ImageButton
+                    android:padding="@dimen/_5sdp"
+                    android:id="@+id/ibMinus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_minus_round_small" />
+
+                <LinearLayout
+                    android:layout_width="0px"
+                    android:layout_height="0px"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true" />
+
+                <TextView
+                    android:id="@+id/tvQty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    tools:text="123"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_20" />
+
+                <ImageButton
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:id="@+id/ibPlus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_plus_round_small" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:gravity="right"
+            android:layout_below="@+id/llPriceAndCount"
+            android:visibility="gone"
+            android:id="@+id/tvRemoveItemNotice"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="@string/this_will_remove_items_if_exists"
+            android:textColor="@color/color_text_green"
+            android:textSize="@dimen/font_12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</layout>

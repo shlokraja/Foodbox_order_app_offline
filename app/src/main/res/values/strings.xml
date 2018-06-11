@@ -1,0 +1,138 @@
+<resources>
+    <string name="app_name">FrshlyPOS</string>
+    <string name="title_item_detail">Item Detail</string>
+    <string name="order_summary">ORDER  SUMMARY</string>
+    <string name="clear">Clear</string>
+    <string name="buy">Buy Now</string>
+    <string name="total_including_tax">Grand Total (including tax)</string>
+    <string name="item_name">Item Name</string>
+    <string name="qty">Qty</string>
+    <string name="price">Price</string>
+    <string name="cancel">Cancel</string>
+    <string name="confirm">Confirm</string>
+    <string name="accept_card">Accept Card</string>
+    <string name="accept_cash">Accept Cash</string>
+    <string name="accept_others">Accept Others</string>
+    <string name="show_snacks">Show snacks</string>
+    <string name="mobile_no">Mobile Number</string>
+    <string name="show_item_images">Show Item Images</string>
+    <string name="country">Country</string>
+    <string name="hq_url">HQ URL</string>
+    <string name="outlet_url">OUTLET URL</string>
+    <string name="websocket_url">WEBSOCKET URL</string>
+    <string name="settings_password">Settings password</string>
+    <string name="payment_gateway_type">Payment Gateway Type</string>
+    <string name="outlet_id">OUTLET ID</string>
+    <string name="inspirenetz_digest_auth">Inspirenetz digest_auth</string>
+    <string name="counter_code">Counter Code</string>
+    <string name="inspirenetz_http_url">Inspirenetz http url</string>
+    <string name="inspirenetz_username">Inspirenetz username</string>
+    <string name="inspirenetz_password">Inspirenetz password</string>
+    <string name="ip_address">IP Address</string>
+    <string name="port_number">Port Number</string>
+    <string name="edit">Edit</string>
+   <!-- <string name="authenticate_with_device">Authenticate with device</string>-->
+    <string name="authenticate_with_device">Authenticate device</string>
+    <string name="clear_all_locks">Clear All Locks</string>
+    <string name="save">Save</string>
+    <string name="enter_password">Enter password</string>
+    <string name="enter">Enter</string>
+    <string name="checkout">Checkout</string>
+    <string name="back">Back</string>
+    <string name="card">Card</string>
+    <string name="cash">Cash</string>
+    <string name="enter_mobile_no_to_receive_bill">Enter mobile no: (to receive bill)</string>
+    <string name="total_before_tax">Total (before tax)</string>
+    <string name="gst_tax_value">GST Tax Value</string>
+    <string name="payment_type">Payment Type</string>
+    <string name="pay">Pay</string>
+    <string name="please_pick_up_your_order">Please pick up your order</string>
+    <string name="please_select_item">Please select an item</string>
+    <string name="please_wait">Please wait</string>
+    <string name="merchant_id">Merchant ID</string>
+    <string name="_15_digit_alphanumeric">15 digit alphanumeric</string>
+    <string name="terminal_id">Terminal ID</string>
+    <string name="_8_digit_alphanumeric">8 digit alphanumeric</string>
+    <string name="bluetooth_name">Bluetooth name</string>
+    <string name="bluetooth_address">Bluetooth Address</string>
+    <string name="password_incorrect">Password incorrect</string>
+    <string name="mswipe_username">Mswipe username</string>
+    <string name="mswipe_password">Mswipe password</string>
+    <!--<string name="connect_to_device">Connect to Device</string>-->
+    <string name="connect_to_device">Connect Device</string>
+    <string name="bank_summary">Bank Summary</string>
+    <string name="snacks_amp_n_drinks">Snacks &amp; \n   Drinks</string>
+    <string name="meals">Meals</string>
+    <string name="ordering_is_currently_suspended_please_contact_staff">Ordering is currently suspended. Please contact staff.</string>
+    <string name="dispenser_Loading">Dispenser is loading items currently. Please contact staff.</string>
+    <string name="app_is_running_in_test_mode">Application is running in Test Mode. Click Ok to proceed.</string>
+    <string name="please_enter_the_mobile_number">Please enter the mobile number</string>
+    <string name="mobile_number_is_incorrect">Mobile number is incorrect</string>
+    <string name="this_will_remove_items_if_exists">This will remove items \n( if exists ) from the order</string>
+    <string name="no_items_in_the_list">No items in the list.  \nPlease add an item or try clearing the locks from the settings.</string>
+    <string name="your_cart_is_empty">Your cart is empty!</string>
+    <string name="veg_items">Veg Items</string>
+    <string name="non_veg_items">Non-Veg Items</string>
+    <string name="settings">Settings</string>
+    <string name="accept_snacks">Accept Snacks</string>
+    <string name="hint_country">Country</string>
+    <string name="hint_outlet_url">Outlet URL</string>
+    <string name="hint_websocket_url">Websocket URL</string>
+    <string name="hint_outlet_id">Outlet ID</string>
+    <string name="animate_items">Animate Items</string>
+    <string name="double_tap_to_show_item_popup">Double Tap to Show Item Popup</string>
+    <string name="clear_locked_items">Clear Locked Items</string>
+
+    <string-array name="arr_countries">
+        <item>--Select--</item>
+        <item>India</item>
+        <item>Singapore</item>
+    </string-array>
+
+    <string-array name="arr_payment_modes">
+        <item>--Select--</item>
+        <item>SingaporePayment</item>
+        <item>MSwipeInterface</item>
+        <item>Ongo</item>
+    </string-array>
+
+    <string-array name="arr_payment_modes_india">
+        <item>--Select--</item>
+        <item>MSwipeInterface</item>
+        <item>Ongo</item>
+    </string-array>
+
+    <string-array name="arr_payment_modes_singapore">
+        <item>--Select--</item>
+        <item>SingaporePayment</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="double_tap_to_add_more_qty">Double tap to add more quantity.</string>
+    <string name="email_logs">Email Logs</string>
+    <string name="credit_debit_card">Credit/Debit Card</string>
+    <string name="others">Others</string>
+    <string name="grand_total">Grand Total</string>
+    <string name="including_tax">(Including tax)</string>
+    <string name="sodexo_card">Sodexo Card</string>
+    <string name="gprs_card">GPRS Card</string>
+    <string name="sodexo_coupon">Sodexo Coupon</string>
+    <string name="wallet">Wallet</string>
+    <string name="credit">Credit</string>
+    <string name="security">Security</string>
+    <string name="ok">Ok</string>
+    <string name="select_the_payment_options_from_settings">Select the payment options from settings</string>
+    <string name="no_network">No network</string>
+
+    <string name="order_placed">Order placed</string>
+    <string name="your_order_mo_is">Your order mo. is</string>
+    <string name="was_successful">was successful !</string>
+    <string name="please_proceed_the_payment">Please Proceed the Payment!</string>
+    <string name="please_pick_up_your_sides">Please pick up your sides</string>
+    <string name="closing_in_5_seconds">Closing in 5 seconds...</string>
+    <string name="swipe_card">Swipe Card</string>
+    <string name="please_retry_or_pay_using_a_different_method">Please retry or pay using a different method</string>
+    <string name="please_add_item_from_menu">Please add items from menu.</string>
+    <string name="device_authenticated_successfully">Device Authenticated Successfully</string>
+</resources>

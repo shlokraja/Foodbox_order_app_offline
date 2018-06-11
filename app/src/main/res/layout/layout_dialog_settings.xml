@@ -1,0 +1,1236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minWidth="@dimen/_400sdp"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp">
+
+        <Button
+            android:id="@+id/btnEdit"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_gravity="right"
+            android:background="@drawable/drawable_button_red"
+            android:text="@string/edit"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_14" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/accept_card"
+                                android:textColor="@color/color_text_default"
+                                android:textSize="@dimen/font_12" />
+
+                            <CheckBox
+                                android:id="@+id/chkAcceptCard"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/color_text_default"
+                                android:textSize="@dimen/font_12" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/accept_others"
+                                android:textColor="@color/color_text_default"
+                                android:textSize="@dimen/font_12" />
+
+                            <CheckBox
+                                android:id="@+id/chkAcceptOthers"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/color_text_default"
+                                android:textSize="@dimen/font_12" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/accept_cash"
+                                android:textColor="@color/color_text_default"
+                                android:textSize="@dimen/font_12" />
+
+                            <CheckBox
+                                android:id="@+id/chkAcceptCash"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/color_text_default"
+                                android:textSize="@dimen/font_12" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/mobile_no"
+                                android:textColor="@color/color_text_default"
+                                android:textSize="@dimen/font_12" />
+
+                            <CheckBox
+                                android:id="@+id/chkMobileNumber"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/color_text_default"
+                                android:textSize="@dimen/font_12" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/show_snacks"
+                                android:textColor="@color/color_text_default"
+                                android:textSize="@dimen/font_12" />
+
+                            <CheckBox
+                                android:id="@+id/chkShowSnacks"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/color_text_default"
+                                android:textSize="@dimen/font_12" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/show_item_images"
+                                android:textColor="@color/color_text_default"
+                                android:textSize="@dimen/font_12" />
+
+                            <CheckBox
+                                android:id="@+id/chkShowItemImages"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/color_text_default"
+                                android:textSize="@dimen/font_12" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/country"
+                        android:textColor="@color/color_text_default"
+                        android:textSize="@dimen/font_12" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvSpnCountry"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/font_12"
+                            android:visibility="gone"
+                            tools:text="--Select--" />
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_20sdp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:background="@drawable/drawable_border_black" />
+
+                            <Spinner
+                                android:id="@+id/spnCountry"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_20sdp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:entries="@array/arr_countries" />
+
+                        </FrameLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/hq_url"
+                        android:textColor="@color/color_text_default"
+                        android:textSize="@dimen/font_12" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="0px"
+                            android:layout_height="0px"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true" />
+
+                        <EditText
+                            android:id="@+id/etHqURL"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_weight="1"
+                            android:background="@drawable/drawable_border_black"
+                            android:padding="@dimen/_5sdp"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/font_12" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/outlet_url"
+                        android:textColor="@color/color_text_default"
+                        android:textSize="@dimen/font_12" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/etOutletURL"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_weight="1"
+                            android:background="@drawable/drawable_border_black"
+                            android:padding="@dimen/_5sdp"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/font_12" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/websocket_url"
+                        android:textColor="@color/color_text_default"
+                        android:textSize="@dimen/font_12" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/etWebSockURL"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_weight="1"
+                            android:background="@drawable/drawable_border_black"
+                            android:padding="@dimen/_5sdp"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/font_12" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/settings_password"
+                        android:textColor="@color/color_text_default"
+                        android:textSize="@dimen/font_12" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/etSettingsPassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_weight="1"
+                            android:background="@drawable/drawable_border_black"
+                            android:inputType="textPassword"
+                            android:padding="@dimen/_5sdp"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/font_12" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/payment_gateway_type"
+                        android:textColor="@color/color_text_default"
+                        android:textSize="@dimen/font_12" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:orientation="vertical">
+
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_20sdp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:background="@drawable/drawable_border_black" />
+
+                            <Spinner
+                                android:id="@+id/spnPaymentGatewayType"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_20sdp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:entries="@array/arr_payment_modes" />
+
+                        </FrameLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/outlet_id"
+                            android:textColor="@color/color_text_default"
+                            android:textSize="@dimen/font_12" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <EditText
+                                android:id="@+id/etOutLetID"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_20sdp"
+                                android:layout_weight="1"
+                                android:background="@drawable/drawable_border_black"
+                                android:padding="@dimen/_5sdp"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/font_12" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/counter_code"
+                            android:textColor="@color/color_text_default"
+                            android:textSize="@dimen/font_12" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <EditText
+                                android:id="@+id/etCounterCode"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_20sdp"
+                                android:layout_weight="1"
+                                android:background="@drawable/drawable_border_black"
+                                android:padding="@dimen/_5sdp"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/font_12" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/inspirenetz_digest_auth"
+                            android:textColor="@color/color_text_default"
+                            android:textSize="@dimen/font_12" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <EditText
+                                android:id="@+id/etInspirenetzDigestAuth"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_20sdp"
+                                android:layout_weight="1"
+                                android:background="@drawable/drawable_border_black"
+                                android:padding="@dimen/_5sdp"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/font_12" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/inspirenetz_http_url"
+                            android:textColor="@color/color_text_default"
+                            android:textSize="@dimen/font_12" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <EditText
+                                android:id="@+id/etInspireNetzHttpURL"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_20sdp"
+                                android:layout_weight="1"
+                                android:singleLine="true"
+                                android:background="@drawable/drawable_border_black"
+                                android:padding="@dimen/_5sdp"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/font_12" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/inspirenetz_username"
+                            android:textColor="@color/color_text_default"
+                            android:textSize="@dimen/font_12" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <EditText
+                                android:id="@+id/etInspirenetzUsername"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_20sdp"
+                                android:layout_weight="1"
+                                android:background="@drawable/drawable_border_black"
+                                android:padding="@dimen/_5sdp"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/font_12" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/inspirenetz_password"
+                            android:textColor="@color/color_text_default"
+                            android:textSize="@dimen/font_12" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <EditText
+                                android:inputType="textPassword"
+                                android:id="@+id/etInspireNetzPassword"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_20sdp"
+                                android:layout_weight="1"
+                                android:background="@drawable/drawable_border_black"
+                                android:padding="@dimen/_5sdp"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/font_12" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:id="@+id/llOngoViews"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/merchant_id"
+                                android:textColor="@color/color_text_default"
+                                android:textSize="@dimen/font_12" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <EditText
+                                    android:id="@+id/etMerchantID"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_20sdp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/drawable_border_black"
+                                    android:hint="@string/_15_digit_alphanumeric"
+                                    android:padding="@dimen/_5sdp"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/font_12" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/terminal_id"
+                                android:textColor="@color/color_text_default"
+                                android:textSize="@dimen/font_12" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <EditText
+                                    android:id="@+id/etTerminalID"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_20sdp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/drawable_border_black"
+                                    android:hint="@string/_8_digit_alphanumeric"
+                                    android:inputType="number"
+                                    android:padding="@dimen/_5sdp"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/font_12" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/bluetooth_name"
+                                android:textColor="@color/color_text_default"
+                                android:textSize="@dimen/font_12" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <EditText
+                                    android:id="@+id/etBluetoothName"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_20sdp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/drawable_border_black"
+                                    android:hint="RA0017XX"
+                                    android:padding="@dimen/_5sdp"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/font_12" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/bluetooth_address"
+                                android:textColor="@color/color_text_default"
+                                android:textSize="@dimen/font_12" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <EditText
+                                    android:id="@+id/etBluetoothAddress"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_20sdp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/drawable_border_black"
+                                    android:hint="00:00:00:00:00:00"
+                                    android:inputType="number"
+                                    android:padding="@dimen/_5sdp"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/font_12" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/llSingaporePaymentViews"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/ip_address"
+                                android:textColor="@color/color_text_default"
+                                android:textSize="@dimen/font_12" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <EditText
+                                    android:id="@+id/etIPAddress"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_20sdp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/drawable_border_black"
+                                    android:hint="@string/_15_digit_alphanumeric"
+                                    android:padding="@dimen/_5sdp"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/font_12" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/port_number"
+                                android:textColor="@color/color_text_default"
+                                android:textSize="@dimen/font_12" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <EditText
+                                    android:id="@+id/etPortNumber"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_20sdp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/drawable_border_black"
+                                    android:hint="4 digit number"
+                                    android:inputType="number"
+                                    android:padding="@dimen/_5sdp"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/font_12" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/llMSwipeViews"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/mswipe_username"
+                                android:textColor="@color/color_text_default"
+                                android:textSize="@dimen/font_12" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <EditText
+                                    android:id="@+id/etMSwipeUsername"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_20sdp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/drawable_border_black"
+                                    android:hint="@string/_15_digit_alphanumeric"
+                                    android:padding="@dimen/_5sdp"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/font_12" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/mswipe_password"
+                                android:textColor="@color/color_text_default"
+                                android:textSize="@dimen/font_12" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <EditText
+                                    android:id="@+id/etMSwipePassword"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_20sdp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/drawable_border_black"
+                                    android:hint="4 digit number"
+                                    android:inputType="number"
+                                    android:padding="@dimen/_5sdp"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/font_12" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/llButtons"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/btnConnectToDevice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/drawable_button_blue"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/connect_to_device"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_14" />
+
+                    <Button
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:layout_marginRight="@dimen/_20sdp"
+                        android:id="@+id/btnAuthenticateDevice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/drawable_button_blue"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/authenticate_with_device"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_14" />
+
+                    <Button
+                        android:id="@+id/btnBankSummary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/drawable_button_blue"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/bank_summary"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_14" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:text="Show logs"
+                    android:textSize="@dimen/font_12"
+                    android:textColor="@color/color_text_default"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <EditText
+                    android:id="@+id/etLogs"
+                    android:textColor="@color/color_text_default"
+                    android:textSize="@dimen/font_12"
+                    android:enabled="false"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/drawable_border_black"
+                    android:inputType="textMultiLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+
+                    <Button
+                    android:id="@+id/btnCancel"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/drawable_button_orange"
+                    android:padding="@dimen/_5sdp"
+                    android:text="@string/cancel"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_14" />
+
+                    <Space
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="wrap_content" />
+
+                    <Button
+                        android:id="@+id/btnEmailLogs"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@drawable/drawable_button_blue"
+                        android:padding="@dimen/_5sdp"
+                        android:text="Email logs"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_14" />
+
+                    <Space
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="wrap_content" />
+
+                    <Button
+                        android:id="@+id/btnClearAllLocks"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@drawable/drawable_button_blue"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/clear_all_locks"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_14" />
+
+                    <Space
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="wrap_content" />
+
+                    <Button
+                        android:id="@+id/btnSave"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@drawable/drawable_button_blue"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/save"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_14" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </ScrollView>
+
+    </LinearLayout>
+</layout>

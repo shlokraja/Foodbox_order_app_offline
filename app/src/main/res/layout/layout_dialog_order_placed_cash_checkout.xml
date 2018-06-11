@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:minWidth="@dimen/_300sdp"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/order_placed"
+            android:textAllCaps="true"
+            android:textColor="@color/color_text_default_dark"
+            android:textSize="@dimen/font_24"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvOrderNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/your_order_mo_is"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+            <TextView
+                android:id="@+id/tvOrderNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:layout_marginRight="@dimen/_2sdp"
+                android:text="10"
+                android:textStyle="bold"
+                android:textColor="@color/color_text_default"
+                android:textSize="@dimen/font_24"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/was_successful"
+                android:textColor="@color/color_text_default"
+                android:textSize="@dimen/font_20"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvProceedPayment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/please_proceed_the_payment"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+            <TextView
+                android:id="@+id/tvPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:layout_marginRight="@dimen/_2sdp"
+                android:text=""
+                android:textColor="@color/color_text_default"
+                android:textSize="@dimen/_20sdp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@color/colorPrimary" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvOrderDownText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?selectableItemBackground"
+                android:gravity="start|center_vertical"
+                android:text="@string/please_pick_up_your_sides"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_18"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?selectableItemBackground"
+                android:gravity="end|center_vertical"
+                android:text="@string/closing_in_5_seconds"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_18"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

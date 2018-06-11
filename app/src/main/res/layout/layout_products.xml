@@ -1,0 +1,32 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.frshly.ui.fragments.ProductsFragment">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvItems"
+            android:layout_width="@dimen/item_width"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_5sdp"
+            android:visibility="visible"
+            app:layoutManager="GridLayoutManager"
+            app:spanCount="3"
+            tools:listitem="@layout/row_outside_item" />
+
+        <TextView
+            android:id="@+id/tvNoItems"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/no_items_in_the_list"
+            android:textColor="@color/color_black_alpha_70"
+            android:textSize="@dimen/font_16"
+            android:visibility="gone" />
+
+
+    </FrameLayout>
+</layout>

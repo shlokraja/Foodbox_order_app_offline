@@ -1,0 +1,188 @@
+<layout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_grey"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/_32sdp">
+
+        <TextView
+            android:id="@+id/tvOrderSummary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/_4sdp"
+            android:paddingLeft="@dimen/_15sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:text="@string/order_summary"
+            android:textColor="@color/color_text_default_dark"
+            android:textSize="@dimen/font_18"
+            android:textStyle="bold" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/rlTotal"
+            android:layout_below="@+id/tvOrderSummary"
+            android:layout_marginLeft="@dimen/_2sdp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="10">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_8sdp"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_edit" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:gravity="center"
+                    android:text="@string/item_name"
+                    android:textColor="@color/color_text_default"
+                    android:textSize="@dimen/font_12" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="@string/qty"
+                    android:textColor="@color/color_text_default"
+                    android:textSize="@dimen/font_12" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="@string/price"
+                    android:textColor="@color/color_text_default"
+                    android:textSize="@dimen/font_12" />
+
+            </LinearLayout>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvOrderedItems"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                tools:listitem="@layout/row_order_item"></android.support.v7.widget.RecyclerView>
+
+            <LinearLayout
+                android:id="@+id/llEmptyCart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:src="@drawable/ic_cart_empty" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="@string/your_cart_is_empty"
+                    android:textColor="@color/color_text_default"
+                    android:textSize="@dimen/font_22" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="@string/please_add_item_from_menu"
+                    android:textColor="@color/color_buttons_grey"
+                    android:textSize="@dimen/font_18" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_3sdp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_veg_small"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:text="@string/veg_items"
+                        android:textColor="@color/color_buttons_grey"
+                        android:textSize="@dimen/font_12" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:drawableLeft="@drawable/ic_nonveg_small"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:text="@string/non_veg_items"
+                        android:textColor="@color/color_buttons_grey"
+                        android:textSize="@dimen/font_12" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rlTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/llButtons"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/_2sdp"
+            android:background="@color/color_light_yellow"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/_3sdp"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:paddingTop="@dimen/_3sdp"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/total_including_tax"
+                android:textColor="@color/color_text_default_dark"
+                android:textSize="@dimen/font_20"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:padding="@dimen/_2sdp"
+                android:textColor="@color/color_text_default_dark"
+                android:textSize="@dimen/font_24"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</layout>

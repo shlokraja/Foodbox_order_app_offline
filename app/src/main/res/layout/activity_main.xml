@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.activities.MainActivity">
+
+
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:id="@+id/appBarLayout"
+            android:layout_height="wrap_content"
+            app:elevation="0dp">
+
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/toolbar"
+                android:visibility="gone" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/tab_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="@color/colorPrimary"
+                    android:minHeight="?attr/actionBarSize"
+                    app:tabIndicatorColor="@color/white"
+                    app:tabMode="scrollable"
+                    app:tabSelectedTextColor="@color/white"
+                    app:tabTextAppearance="@style/AppTabTextAppearance"
+                    app:tabTextColor="@color/color_tab_unselected" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:gravity="right"
+                    android:paddingRight="@dimen/_5sdp">
+
+                    <ImageView
+                        android:id="@+id/ivAppIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_header_app_icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_toRightOf="@id/ivAppIcon"
+                        android:text="@string/app_name"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_18"
+                        android:visibility="gone" />
+
+
+                </RelativeLayout>
+
+            </FrameLayout>
+
+
+        </android.support.design.widget.AppBarLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/appBarLayout"
+            android:baselineAligned="false"
+            android:divider="?android:attr/dividerHorizontal"
+            android:orientation="horizontal"
+            android:showDividers="middle"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="@dimen/_290sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tab_layout"
+                android:layout_marginRight="@dimen/_2sdp"
+                android:background="@color/color_grey" />
+
+            <include
+                android:id="@+id/viewOrderSummary"
+                layout="@layout/layout_order_summary" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvOrderStop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_black_alpha_70"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/ordering_is_currently_suspended_please_contact_staff"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_26"
+            android:textStyle="bold"
+            android:visibility="gone" />
+        <TextView
+            android:id="@+id/dispenserLoading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_black_alpha_70"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/dispenser_Loading"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_26"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+       <!-- <android.support.v7.widget.CardView
+            android:id="@+id/cardButtons"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:clickable="true"
+            app:cardElevation="@dimen/_5sdp"
+            app:cardUseCompatPadding="false">-->
+
+            <RelativeLayout
+                android:background="@color/white"
+                android:layout_height="@dimen/_35sdp"
+                android:id="@+id/cardButtons"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvDoubleTap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="@string/double_tap_to_add_more_qty"
+                    android:textAllCaps="true"
+                    android:textColor="@color/color_text_default_dark"
+                    android:textSize="@dimen/font_16"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/llButtons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnClear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_22sdp"
+                        android:layout_marginRight="@dimen/_6sdp"
+                        android:background="@drawable/drawable_button_grey"
+                        android:minWidth="@dimen/_50sdp"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:paddingRight="@dimen/_10sdp"
+                        android:text="@string/clear"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_16" />
+
+                    <Button
+                        android:id="@+id/btnBuy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_22sdp"
+                        android:background="@drawable/drawable_button_green"
+                        android:minWidth="@dimen/_50sdp"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:paddingRight="@dimen/_10sdp"
+                        android:text="@string/buy"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_16" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        <!--</android.support.v7.widget.CardView>-->
+
+
+    </RelativeLayout>
+</layout>

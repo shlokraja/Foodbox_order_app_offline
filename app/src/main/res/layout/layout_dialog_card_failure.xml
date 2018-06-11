@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:minWidth="@dimen/_300sdp"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/swipe_card"
+            android:textAllCaps="true"
+            android:textColor="@color/color_text_default_dark"
+            android:textSize="@dimen/font_24"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvOrderNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your payment of"
+                android:textColor="@color/color_text_default"
+                android:textSize="@dimen/font_24" />
+
+            <TextView
+                android:id="@+id/tvOrderNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:layout_marginRight="@dimen/_2sdp"
+                android:textColor="@color/color_red"
+                android:textSize="@dimen/font_24"
+                android:textStyle="bold"
+                android:visibility="visible"
+                tools:text="10" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/was_successful"
+                android:textColor="@color/color_text_default"
+                android:textSize="@dimen/font_20"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvProceedPayment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/please_retry_or_pay_using_a_different_method"
+                android:textColor="@color/color_text_default"
+                android:textSize="@dimen/font_20" />
+
+            <TextView
+                android:id="@+id/tvPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:layout_marginRight="@dimen/_2sdp"
+                android:text=""
+                android:textColor="@color/color_text_default"
+                android:textSize="@dimen/font_24"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvFailureReason"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:textColor="@color/color_text_default"
+            android:textSize="@dimen/font_16" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@color/colorPrimary" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvOrderDownText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?selectableItemBackground"
+                android:gravity="start|center_vertical"
+                android:text="@string/please_pick_up_your_sides"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_18"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvBack"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?selectableItemBackground"
+                android:gravity="end|center_vertical"
+                android:text="@string/back"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_18"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>
